@@ -209,7 +209,7 @@ footer hr {
     color: white;
 }
 
-@media screen and (max-width: 570px) {
+@media screen and (min-width: 320px) and (max-width: 576px) {
     body {
         align-items: center;
         justify-content: center;
