@@ -71,8 +71,10 @@
 
 .items {
     display: flex;
+    padding-top: 90px;
     justify-content: space-around;
-    margin: 100px;
+    margin: 60px;
+    margin-right: 20px;
 }
 
 .buttonSection {
@@ -81,35 +83,33 @@
     text-align: center;
     align-items: center;
     border-radius: 10px;
-    margin: 2px;
     margin-right: 30px;
 
 }
 
 .button {
     line-height: 5px;
-    height: 50px;
+    height: 5px;
     width: 230px;
     padding: 30px;
     margin: 20px;
     font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     cursor: pointer;
     outline: none;
     color: black;
     border: none;
     border-radius: 15px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
 }
 
 .button:hover {
-    background-color: #f01c1c
+    background-color: #DD0000
 }
 
 .button:active {
-    background-color: #e31e1e;
+    background-color: #DD0000;
     transform: translateY(4px);
 }
 
@@ -120,62 +120,48 @@
 }
 
 .box {
-    width: 310px;
-    height: 310px;
+    width: 260px;
+    height: 260px;
     background-color: rgb(248 248 248);
     border-radius: 10px;
     color: black;
+
+
 }
 
 .box-info {
     margin-top: 20px;
-    margin-left: 20px;
     width: 100%;
-    
+    font-size: 12px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-.box-info button {
-    color: black;
-    height: 25px;
-    width: 100px;
-    border-radius: 4px;
+.boxImg {
+    display: flex;
+    padding: 20px;
+    padding-top: 40px;
 }
 
 .boxImg img {
-    width: 75%;
+    width: 100%;
+    padding: 0;
 }
 
 .box-info a {
     padding: 5px 20px;
-    color: rgb(141, 141, 141);
+    color: rgb(144, 138, 138);
     text-decoration: none;
     border: 2px solid black;
     border-radius: 10px;
 }
 
 .box-info h3 {
-    font-size: 15px;
+    font-size: 12px;
     margin-top: 20px;
 }
 
-.box-icon {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-}
-
-.box-icon:last-child .icon1 {
-    margin-right: 60px;
-}
-
-.icon1 {
-    display: flex;
-    align-items: center;
-}
-
-.icon1 p {
-    margin-left: 10px;
-}
 
 footer {
     height: 400px;
@@ -221,20 +207,23 @@ footer hr {
     color: white;
 }
 
-
-@media screen and (max-width: 576px) {
-    body{
+@media screen and (max-width: 570px) {
+    body {
         align-items: center;
+        justify-content: center;
     }
-    .container{
+
+    .container {
         background-color: black;
         width: 100%;
         justify-content: center;
         align-items: center;
     }
-    .container img{
+
+    .container img {
         align-items: center;
     }
+
     .banner {
         flex-direction: column;
         padding: 0;
@@ -247,8 +236,8 @@ footer hr {
         width: 100%;
         padding-top: 20px;
     }
-  
-    .bannerText p{
+
+    .bannerText p {
         text-align: center;
         width: 150px;
         height: 150px;
@@ -258,15 +247,18 @@ footer hr {
 
     .items {
         flex-direction: column;
+        justify-content: center;
     }
 
     .items .match-blog-section .main-box {
         width: 100%;
     }
-    .buttonSection{
+
+    .buttonSection {
         background-color: white;
-        width: 100%;
-        margin: 20px;
+        width: 0%;
+        margin: 0;
+        padding: 0;
     }
 
     .main-box {
@@ -277,16 +269,23 @@ footer hr {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        
+        padding: 10px;
     }
-    footer{
-        height: 450px;
+    .about p{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+
+    footer {
+        height: 600px;
     }
 
 }
 
 @media screen and (min-width: 577px) and (max-width: 992px) {
- 
+
     .banner {
         display: flex;
         justify-content: space-around;
@@ -300,8 +299,8 @@ footer hr {
         width: 100%;
         padding-top: 20px;
     }
-  
-    .bannerText p{
+
+    .bannerText p {
         text-align: center;
         width: 150px;
         height: 150px;
@@ -316,7 +315,8 @@ footer hr {
     .items .match-blog-section .main-box {
         width: 100%;
     }
-    .buttonSection{
+
+    .buttonSection {
         display: flex;
         flex-direction: row;
         background-color: white;
@@ -339,8 +339,7 @@ footer hr {
     .about {
         flex-wrap: wrap;
         align-items: center;
-        text-align: center; 
+        text-align: center;
     }
 
 }
-
